@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Generate PI with random numbers</title>
+</head>
+<body>
+<div align="center"><h2>Enter the number of points to compute</h2></div>
+<div align="center"><input type="number" id="myInput" oninput="piCalc()"></div>
+<div align="center"><h2 id="piout"></h2></div>
+<div align="center"><canvas id="circlecanvas" width="500" height="500"></canvas></div>
+<script type="text/javascript">
+
+	function piCalc() {
+        var circlecanvas = document.getElementById("circlecanvas");
+        var context = circlecanvas.getContext("2d");
+    var points = document.getElementById("myInput").value;
+	  var x;
+      var y;		
+      var square = 0;						   
+      var circle = 0;						   						     			   
+     								     
+     for (var i = 0; i < points ; i++)				   
+      {								   
+         x = Math.random()*500;
+         y = Math.random()*500;
+
+          if ( x*x + y*y <= 250000 )	{
+              circle++;
+              square++;
+              context.fillStyle = 'purple';
+              context.fillRect(x,y,1,1);
+          }
+          else{
+              square++;
+              context.fillStyle = 'red';
+              context.fillRect(x,y,1,1);
+          }
+      }			
+      pi = 4* (circle/square);
+      document.getElementById("piout").innerHTML = "PI is: " + pi;
+  }
+</script>
+</body>
+</html>

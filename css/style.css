@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500|Quicksand:300');
+
+body{
+    font-family: Quicksand;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: auto auto 10vh auto;
+    align-items: center;
+    justify-items: center;
+}
+
+#myInput{
+    text-align: center;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 2em;
+    width: 80vw;
+    height: 7vh;
+}
+
+#piout{
+    font-size: 200%;
+}
+
+canvas{
+    border:  2px solid black;
+    border-radius: 10px;
+}
+
+h1{
+    font-family: Montserrat;
+}
+
+.description{
+    display: grid;
+    margin : 3%;
+    justify-items: center;
+}
+
+.description p{
+    font-size: 20px;
+}

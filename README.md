@@ -7,7 +7,7 @@ Check out a [Live Demo](https://harish.tech/projects/MonteCarloPI/) of the imple
 
 ![](images/action.gif)
 
-[This](mpci.java) is the Java port of the code.
+[This](mcpi.java) is the Java port of the code.
 
 ------
 # May the force be with you

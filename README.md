@@ -9,5 +9,7 @@ Check out a [Live Demo](https://harish.tech/projects/MonteCarloPI/) of the imple
 
 [This](mcpi.java) is the Java port of the code.
 
+Feel free to use it if you find it interesting.
+
 ------
 # May the force be with you
